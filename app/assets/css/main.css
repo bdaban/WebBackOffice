@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Stabilize layout: always show vertical scrollbar to avoid width jumps */
+/* html { overflow-y: scroll; } */
+
+/* Prevent container height growth by chart tooltips/legends */
+/* .echarts, .v-chart, .echarts-for-vue, .echarts-container { contain: layout paint; } */
+/* Fix ECharts tooltip causing reflow */
+/* .echarts-tooltip, .echarts { position: relative; } */

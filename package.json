@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "db:gen:mssql": "cross-env FORCE_COLOR=1 typeorm-model-generator -h %DB_HOST% -d %DB_DATABASE% -u %DB_USERNAME% -x %DB_PASSWORD% -p %DB_PORT% -e mssql -o server/db/entities --noConfig true --convertCaseEntity camel --convertCaseFile camel --convertCaseProperty camel --lazy"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "chart.js": "^4.5.0",
+    "echarts": "^6.0.0",
+    "mssql": "^11.0.1",
+    "nuxt": "^4.0.3",
+    "nuxt-echarts": "^1.0.0",
+    "reflect-metadata": "^0.2.2",
+    "tailwindcss": "^4.1.12",
+    "typeorm": "^0.3.26",
+    "vue": "^3.5.20",
+    "vue-echarts": "^8.0.0-beta.1",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "cross-env": "^10.0.0",
+    "typeorm-model-generator": "^0.4.6"
+  }
+}
